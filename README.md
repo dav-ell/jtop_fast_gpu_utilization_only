@@ -1,6 +1,18 @@
 # jtop_fast_gpu_utilization_only
 
-A lightweight Python library for fast GPU utilization monitoring on NVIDIA Jetson devices, reading directly from `/sys/class/devfreq/17000000.gpu/device/load` at high frequencies (up to 100 Hz or more), significantly faster than jtop's 1 Hz limit.
+A lightweight Python library for fast GPU utilization monitoring on NVIDIA Jetson devices, reading directly from `/sys/class/devfreq/17000000.gpu/device/load` at high frequencies (up to 100 Hz or more), significantly faster than jtop/jetson_stats's 1 Hz limit.
+
+Using jtop (https://github.com/rbonghi/jetson_stats):
+![jtop](assets/jtop.png "jtop")
+
+Using this repo (https://github.com/dav-ell/jtop_fast_gpu_utilization_only):
+![FastGPUMonitor](assets/FastGPUMonitor.png "FastGPUMonitor")
+
+jtop's issues have been well documented:
+- https://github.com/rbonghi/jetson_stats/issues/82
+- https://github.com/rbonghi/jetson_stats/issues/414
+- https://github.com/rbonghi/jetson_stats/issues/73 
+
 
 ## Features
 - High-frequency GPU utilization monitoring (default 100 Hz, configurable up to ~1 kHz)
